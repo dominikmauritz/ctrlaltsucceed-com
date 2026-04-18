@@ -120,46 +120,6 @@
         line-height: 1.05;
       }
 
-      .lede {
-        margin: 1rem 0 0;
-        max-width: 40rem;
-        color: var(--muted);
-        font-size: clamp(1.1rem, 2vw, 1.35rem);
-        line-height: 1.8;
-      }
-
-      .actions {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        margin-top: 0.5rem;
-      }
-
-      .button {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0.95rem 1.6rem;
-        border-radius: 999px;
-        text-decoration: none;
-        font-weight: 600;
-        transition: transform 160ms ease, opacity 160ms ease;
-      }
-
-      .button:hover {
-        transform: translateY(-1px) scale(1.02);
-      }
-
-      .button-primary {
-        background: linear-gradient(209deg, var(--accent-start), var(--accent-end));
-        box-shadow: 0 16px 40px rgba(255, 84, 115, 0.3);
-      }
-
-      .button-secondary {
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        background: rgba(255, 255, 255, 0.05);
-      }
-
       .contact-panel {
         overflow: hidden;
         border: 1px solid var(--panel-border);
@@ -231,10 +191,6 @@
           justify-items: center;
         }
 
-        .lede {
-          max-width: 32rem;
-        }
-
         .contact-grid {
           grid-template-columns: 1fr;
         }
@@ -258,9 +214,6 @@
           padding: 1.5rem;
         }
 
-        .button {
-          width: 100%;
-        }
       }
     </style>
   </head>
@@ -277,19 +230,6 @@
           <div>
             <p class="eyebrow">Ctrl Alt Succeed LLC</p>
             <h1>Turning complex technology into reliable business outcomes.</h1>
-            <p class="lede">
-              A simple landing page for direct contact, rebuilt from the current Carrd
-              site as a standalone static page that can be hosted on GitHub Pages.
-            </p>
-          </div>
-
-          <div class="actions">
-            <a class="button button-primary" href="mailto:hello@ctrlaltsucceed.com">
-              Contact us
-            </a>
-            <a class="button button-secondary" href="#contact">
-              View details
-            </a>
           </div>
 
           <section class="contact-panel" id="contact" aria-label="Contact information">
