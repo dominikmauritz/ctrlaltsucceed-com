@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ctrl Alt Succeed LLC</title>
+    <meta
+      name="description"
+      content="Turning complex technology into simple, reliable business outcomes."
+    >
+    <meta property="og:title" content="Ctrl Alt Succeed LLC">
+    <meta
+      property="og:description"
+      content="Turning complex technology into simple, reliable business outcomes."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ctrlaltsucceed.com/">
+    <meta property="og:image" content="https://ctrlaltsucceed.com/assets/images/card.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://ctrlaltsucceed.com/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Sora:wght@400;700&display=swap"
+      rel="stylesheet"
+    >
+    <style>
+      :root {
+        --bg: #15141c;
+        --panel: rgba(19, 18, 27, 0.78);
+        --panel-border: rgba(255, 255, 255, 0.16);
+        --text: #ffffff;
+        --muted: rgba(255, 255, 255, 0.72);
+        --soft: rgba(255, 255, 255, 0.46);
+        --accent-start: #fa9048;
+        --accent-end: #ff5473;
+        --shadow: 0 24px 80px rgba(0, 0, 0, 0.38);
+        --radius-xl: 32px;
+        --radius-lg: 24px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        min-width: 320px;
+        color: var(--text);
+        font-family: "Inter", sans-serif;
+        background:
+          linear-gradient(to top, rgba(21, 20, 28, 0.9), rgba(21, 20, 28, 0.86)),
+          url("assets/images/bg.svg") center / cover no-repeat,
+          var(--bg);
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .page {
+        width: min(1120px, calc(100% - 2rem));
+        margin: 0 auto;
+        padding: 4rem 0 2rem;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: 320px minmax(0, 1fr);
+        gap: 2rem;
+        align-items: center;
+        min-height: calc(100vh - 6rem);
+      }
+
+      .portrait-card {
+        display: grid;
+        place-items: center;
+      }
+
+      .portrait-shell {
+        width: min(100%, 280px);
+        aspect-ratio: 1;
+        padding: 1rem;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        background: rgba(255, 255, 255, 0.03);
+        box-shadow: var(--shadow);
+      }
+
+      .portrait-shell img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 999px;
+      }
+
+      .content {
+        display: grid;
+        gap: 2rem;
+      }
+
+      .eyebrow {
+        margin: 0 0 0.75rem;
+        color: var(--soft);
+        font-size: 0.95rem;
+        font-weight: 600;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-family: "Sora", sans-serif;
+        font-size: clamp(2.7rem, 6vw, 4.8rem);
+        line-height: 1.05;
+      }
+
+      .lede {
+        margin: 1rem 0 0;
+        max-width: 40rem;
+        color: var(--muted);
+        font-size: clamp(1.1rem, 2vw, 1.35rem);
+        line-height: 1.8;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 0.5rem;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.95rem 1.6rem;
+        border-radius: 999px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: transform 160ms ease, opacity 160ms ease;
+      }
+
+      .button:hover {
+        transform: translateY(-1px) scale(1.02);
+      }
+
+      .button-primary {
+        background: linear-gradient(209deg, var(--accent-start), var(--accent-end));
+        box-shadow: 0 16px 40px rgba(255, 84, 115, 0.3);
+      }
+
+      .button-secondary {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: rgba(255, 255, 255, 0.05);
+      }
+
+      .contact-panel {
+        overflow: hidden;
+        border: 1px solid var(--panel-border);
+        border-radius: var(--radius-xl);
+        background:
+          linear-gradient(90deg, rgba(250, 144, 72, 0.95), rgba(255, 84, 115, 0.92)),
+          url("assets/images/container01.svg") center / cover no-repeat;
+        box-shadow: var(--shadow);
+      }
+
+      .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .contact-item {
+        padding: 2rem;
+      }
+
+      .contact-item + .contact-item {
+        border-left: 1px solid rgba(255, 255, 255, 0.18);
+      }
+
+      .contact-label {
+        margin: 0 0 0.9rem;
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.75);
+      }
+
+      .contact-value {
+        margin: 0;
+        font-size: 1.15rem;
+        line-height: 1.8;
+      }
+
+      .contact-value a {
+        text-decoration: none;
+      }
+
+      .contact-value a:hover {
+        text-decoration: underline;
+      }
+
+      footer {
+        margin-top: 3rem;
+        padding: 1rem 0;
+        text-align: center;
+        color: var(--soft);
+        font-size: 0.95rem;
+      }
+
+      @media (max-width: 860px) {
+        .page {
+          width: min(100% - 1.5rem, 1120px);
+          padding-top: 2rem;
+        }
+
+        .hero {
+          grid-template-columns: 1fr;
+          min-height: auto;
+          text-align: center;
+          padding: 1.5rem 0 0.5rem;
+        }
+
+        .content {
+          justify-items: center;
+        }
+
+        .lede {
+          max-width: 32rem;
+        }
+
+        .contact-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .contact-item + .contact-item {
+          border-left: 0;
+          border-top: 1px solid rgba(255, 255, 255, 0.18);
+        }
+      }
+
+      @media (max-width: 520px) {
+        .page {
+          width: min(100% - 1rem, 1120px);
+        }
+
+        .portrait-shell {
+          width: min(100%, 220px);
+        }
+
+        .contact-item {
+          padding: 1.5rem;
+        }
+
+        .button {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero" id="start">
+        <div class="portrait-card">
+          <div class="portrait-shell">
+            <img src="assets/images/image02.png" alt="Ctrl Alt Succeed portrait logo">
+          </div>
+        </div>
+
+        <div class="content">
+          <div>
+            <p class="eyebrow">Ctrl Alt Succeed LLC</p>
+            <h1>Turning complex technology into reliable business outcomes.</h1>
+            <p class="lede">
+              A simple landing page for direct contact, rebuilt from the current Carrd
+              site as a standalone static page that can be hosted on GitHub Pages.
+            </p>
+          </div>
+
+          <div class="actions">
+            <a class="button button-primary" href="mailto:hello@ctrlaltsucceed.com">
+              Contact us
+            </a>
+            <a class="button button-secondary" href="#contact">
+              View details
+            </a>
+          </div>
+
+          <section class="contact-panel" id="contact" aria-label="Contact information">
+            <div class="contact-grid">
+              <div class="contact-item">
+                <p class="contact-label">Email</p>
+                <p class="contact-value">
+                  <a href="mailto:hello@ctrlaltsucceed.com">hello@ctrlaltsucceed.com</a>
+                </p>
+              </div>
+              <div class="contact-item">
+                <p class="contact-label">Location</p>
+                <p class="contact-value">
+                  Office US<br>
+                  4900 Marble Ave NE<br>
+                  Albuquerque, NM 87110<br>
+                  USA
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <footer>Ctrl Alt Succeed LLC · © All rights reserved.</footer>
+    </main>
+  </body>
+</html>
